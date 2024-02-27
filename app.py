@@ -14,7 +14,8 @@ logger = logging.getLogger(__name__)
 t2is = Text2ImageSearch(qdrant_url=c.QDRANT_URL, qdrant_collection=c.QDRANT_COLLECTION)
 
 
-st.title('Text To Image Search')
+st.set_page_config(page_title='Text2Image Search')
+st.title('Text2Image Search')
 st.subheader('Enter a search query to find relevant images')
 
 st.sidebar.subheader('Search parameters')

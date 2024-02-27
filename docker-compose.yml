@@ -1,0 +1,20 @@
+version: '3'
+services:
+  t2iapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: text2image/search
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data/ads/images:/app/data/ads/images
+    depends_on:
+      - qdrant-db
+
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - ./data/qdrant_storage:/qdrant/storage

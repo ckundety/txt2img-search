@@ -1,0 +1,7 @@
+pillow
+qdrant-client
+transformers
+ipykernel
+torch
+torchvision
+streamlit

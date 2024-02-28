@@ -7,10 +7,13 @@ services:
     image: text2image/search
     ports:
       - "8501:8501"
+    environment:
+      - QDRANT_URL=qdrant
+      - QDRANT_COLLECTION=advert_captions
     volumes:
       - ./data/ads/images:/app/data/ads/images
     depends_on:
-      - qdrant-db
+      - qdrant
 
   qdrant:
     image: qdrant/qdrant

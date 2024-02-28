@@ -5,3 +5,4 @@ ipykernel
 torch
 torchvision
 streamlit
+-f https://download.pytorch.org/whl/cpu

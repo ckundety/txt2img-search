@@ -44,11 +44,4 @@ if submit:
         st.warning("Please enter a search query.")
 
 
-# query input and search button at the bottom
-# st.text_input("Enter your query here", key="query_bottom")
-# st.button("Search", key="search_bottom")
-
-
-# Footer
 st.write("Built with Streamlit")
-

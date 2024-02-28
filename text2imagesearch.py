@@ -36,6 +36,3 @@ class Text2ImageSearch:
             score_threshold=threshold
         )
         return resp
-
-
-
